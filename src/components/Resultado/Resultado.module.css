@@ -1,0 +1,75 @@
+.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 30px 10px;
+    border-left: 2px solid #000 ;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0 40px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-right: 10px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.resultadoImc {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--corResultadoImc);
+}
+
+.resultadoTipo {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.resultadoCalculo {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 641px) {
+    .content {
+        margin: 15px 10px;
+    }
+    h1 {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content {
+        display: block;
+        border: none;
+    }
+    .resultadoCalculo {
+        display: none;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .resultado {
+        padding-bottom: 15px;
+    }
+}

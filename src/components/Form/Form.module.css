@@ -1,0 +1,80 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.inputPeso {
+    font-weight: 500;
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 200px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+label {
+    padding: 5px;
+}
+
+.inputAltura {
+    margin-bottom: 40px;
+    font-weight: 500;
+    display: flex;
+    gap: 60px;
+}
+
+.buttonCalc {
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    padding: 5px 12px;
+    background-color: var(--bgButao);
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.buttonCalc:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 641px) {
+    .content {
+        padding: 10px 5px;
+    }
+    input {
+        width: 60%;
+    }
+    label {
+        text-wrap: nowrap;
+    }
+    .inputAltura {
+        gap: 30px;
+    }
+    .inputPeso {
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .inputAltura,
+    .inputPeso {
+        display: block;
+    }
+}

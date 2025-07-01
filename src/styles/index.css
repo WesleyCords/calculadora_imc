@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--corDoTexto);
+}
+
+:root {
+    --corDeFundo: #2c3e50;
+    --corDeFundoSec: #b2bec3;
+    --corDoTexto: #2d3436;
+    --corResultadoImc: #e67e22;
+    --bgButao: #1475bbd0;
+}
+
+html {
+    background-color: var(--corDeFundo);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 1024px;
+    width: 100%;
+    background-color: var(--corDeFundoSec);
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 641px) {
+    .container {
+        max-width: 90%;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+}
